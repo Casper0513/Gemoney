@@ -54,7 +54,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Bitcoin cannot be compiled without assertions."
+# error "Gemoney cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -1155,19 +1155,23 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
     return ReadRawBlockFromDisk(block, block_pos, message_start);
 }
 
-CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
-{
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
-
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
+CAmount GetBlockSubsidy(int nHeight, const Consensus::Params &consensusParams){
+    CAmount nSubsidy; 
+    if (nHeight == 10 || nHeight == 50 || nHeight == 70 || nHeight == 90 || nHeight == 110 || nHeight == 130)  {
+        nSubsidy = 20000*COIN;   // premine 6x20000 coins
+    } else {
+        if (nHeight <= 150) {
+            nSubsidy = 10 * COIN ;  // small mining to carry out the transactions
+        } else {
+            float year= (nHeight / 210240)+1; // avoid to get a negative nSubsidy
+            float halfing =  year/ 1.618033988750;
+            nSubsidy = (63 / halfing)*COIN;
+        }
+    }
+    printf("GetBlockSubsidy: height: %i - nSubsidy: %ld \n",nHeight, nSubsidy);
     return nSubsidy;
-}
 
+}   
 bool IsInitialBlockDownload()
 {
     // Once this function has returned false, it must remain false.
@@ -1724,8 +1728,8 @@ static ThresholdConditionCache warningcache[VERSIONBITS_NUM_BITS] GUARDED_BY(cs_
 // environment. See test/functional/p2p-segwit.py.
 static bool IsScriptWitnessEnabled(const Consensus::Params& params)
 {
-    return params.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout != 0;
-}
+    return true;
+    return params.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout != 0;}
 
 static unsigned int GetBlockScriptFlags(const CBlockIndex* pindex, const Consensus::Params& consensusparams) EXCLUSIVE_LOCKS_REQUIRED(cs_main) {
     AssertLockHeld(cs_main);
@@ -1764,7 +1768,7 @@ static unsigned int GetBlockScriptFlags(const CBlockIndex* pindex, const Consens
     if (VersionBitsState(pindex->pprev, consensusparams, Consensus::DEPLOYMENT_CSV, versionbitscache) == ThresholdState::ACTIVE) {
         flags |= SCRIPT_VERIFY_CHECKSEQUENCEVERIFY;
     }
-
+    return true;
     if (IsNullDummyEnabled(pindex->pprev, consensusparams)) {
         flags |= SCRIPT_VERIFY_NULLDUMMY;
     }

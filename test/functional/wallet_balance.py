@@ -7,7 +7,7 @@ from decimal import Decimal
 import struct
 
 from test_framework.address import ADDRESS_BCRT1_UNSPENDABLE as ADDRESS_WATCHONLY
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import GemoneyTestFramework
 from test_framework.util import (
     assert_equal,
     assert_raises_rpc_error,
@@ -41,7 +41,7 @@ def create_transactions(node, address, amt, fees):
 
     return txs
 
-class WalletTest(BitcoinTestFramework):
+class WalletTest(GemoneyTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.setup_clean_chain = True

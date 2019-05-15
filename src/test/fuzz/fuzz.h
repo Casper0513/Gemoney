@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_FUZZ_FUZZ_H
-#define BITCOIN_TEST_FUZZ_FUZZ_H
+#ifndef GEMONEY_TEST_FUZZ_FUZZ_H
+#define GEMONEY_TEST_FUZZ_FUZZ_H
 
 #include <functional>
 #include <stdint.h>
@@ -12,4 +12,4 @@
 
 void test_one_input(std::vector<uint8_t> buffer);
 
-#endif // BITCOIN_TEST_FUZZ_FUZZ_H
+#endif // GEMONEY_TEST_FUZZ_FUZZ_H

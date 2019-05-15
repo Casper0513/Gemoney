@@ -1,0 +1,33 @@
+# /etc/conf.d/gemoneyd: config file for /etc/init.d/gemoneyd
+
+# Config file location
+#GEMONEYD_CONFIGFILE="/etc/gemoney/gemoney.conf"
+
+# What directory to write pidfile to?  (created and owned by $GEMONEYD_USER)
+#GEMONEYD_PIDDIR="/var/run/gemoneyd"
+
+# What filename to give the pidfile
+#GEMONEYD_PIDFILE="${GEMONEYD_PIDDIR}/gemoneyd.pid"
+
+# Where to write gemoneyd data (be mindful that the blockchain is large)
+#GEMONEYD_DATADIR="/var/lib/gemoneyd"
+
+# User and group to own gemoneyd process
+#GEMONEYD_USER="gemoney"
+#GEMONEYD_GROUP="gemoney"
+
+# Path to gemoneyd executable
+#GEMONEYD_BIN="/usr/bin/gemoneyd"
+
+# Nice value to run gemoneyd under
+#GEMONEYD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#GEMONEYD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for gemoneyd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+GEMONEYD_SIGTERM_TIMEOUT=60

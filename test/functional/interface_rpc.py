@@ -5,7 +5,7 @@
 """Tests some generic aspects of the RPC interface."""
 
 from test_framework.authproxy import JSONRPCException
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import GemoneyTestFramework
 from test_framework.util import assert_equal, assert_greater_than_or_equal
 
 def expect_http_status(expected_http_status, expected_rpc_code,
@@ -17,7 +17,7 @@ def expect_http_status(expected_http_status, expected_rpc_code,
         assert_equal(exc.error["code"], expected_rpc_code)
         assert_equal(exc.http_status, expected_http_status)
 
-class RPCInterfaceTest(BitcoinTestFramework):
+class RPCInterfaceTest(GemoneyTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

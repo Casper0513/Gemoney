@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_UTIL_H
-#define BITCOIN_TEST_UTIL_H
+#ifndef GEMONEY_TEST_UTIL_H
+#define GEMONEY_TEST_UTIL_H
 
 #include <memory>
 #include <string>
@@ -35,4 +35,4 @@ std::string getnewaddress(CWallet& w);
 CTxIn generatetoaddress(const std::string& address);
 
 
-#endif // BITCOIN_TEST_UTIL_H
+#endif // GEMONEY_TEST_UTIL_H

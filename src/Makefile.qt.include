@@ -2,97 +2,97 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/bitcoin-qt
-EXTRA_LIBRARIES += qt/libbitcoinqt.a
+bin_PROGRAMS += qt/gemoney-qt
+EXTRA_LIBRARIES += qt/libgemoneyqt.a
 
-# bitcoin qt core #
+# gemoney qt core #
 QT_TS = \
-  qt/locale/bitcoin_af.ts \
-  qt/locale/bitcoin_af_ZA.ts \
-  qt/locale/bitcoin_ar.ts \
-  qt/locale/bitcoin_be_BY.ts \
-  qt/locale/bitcoin_bg_BG.ts \
-  qt/locale/bitcoin_bg.ts \
-  qt/locale/bitcoin_ca_ES.ts \
-  qt/locale/bitcoin_ca.ts \
-  qt/locale/bitcoin_ca@valencia.ts \
-  qt/locale/bitcoin_cs.ts \
-  qt/locale/bitcoin_cy.ts \
-  qt/locale/bitcoin_da.ts \
-  qt/locale/bitcoin_de.ts \
-  qt/locale/bitcoin_el_GR.ts \
-  qt/locale/bitcoin_el.ts \
-  qt/locale/bitcoin_en_GB.ts \
-  qt/locale/bitcoin_en.ts \
-  qt/locale/bitcoin_eo.ts \
-  qt/locale/bitcoin_es_AR.ts \
-  qt/locale/bitcoin_es_CL.ts \
-  qt/locale/bitcoin_es_CO.ts \
-  qt/locale/bitcoin_es_DO.ts \
-  qt/locale/bitcoin_es_ES.ts \
-  qt/locale/bitcoin_es_MX.ts \
-  qt/locale/bitcoin_es.ts \
-  qt/locale/bitcoin_es_UY.ts \
-  qt/locale/bitcoin_es_VE.ts \
-  qt/locale/bitcoin_et_EE.ts \
-  qt/locale/bitcoin_et.ts \
-  qt/locale/bitcoin_eu_ES.ts \
-  qt/locale/bitcoin_fa_IR.ts \
-  qt/locale/bitcoin_fa.ts \
-  qt/locale/bitcoin_fi.ts \
-  qt/locale/bitcoin_fr_CA.ts \
-  qt/locale/bitcoin_fr_FR.ts \
-  qt/locale/bitcoin_fr.ts \
-  qt/locale/bitcoin_gl.ts \
-  qt/locale/bitcoin_he.ts \
-  qt/locale/bitcoin_hi_IN.ts \
-  qt/locale/bitcoin_hr.ts \
-  qt/locale/bitcoin_hu.ts \
-  qt/locale/bitcoin_id_ID.ts \
-  qt/locale/bitcoin_it_IT.ts \
-  qt/locale/bitcoin_it.ts \
-  qt/locale/bitcoin_ja.ts \
-  qt/locale/bitcoin_ka.ts \
-  qt/locale/bitcoin_kk_KZ.ts \
-  qt/locale/bitcoin_ko_KR.ts \
-  qt/locale/bitcoin_ku_IQ.ts \
-  qt/locale/bitcoin_ky.ts \
-  qt/locale/bitcoin_la.ts \
-  qt/locale/bitcoin_lt.ts \
-  qt/locale/bitcoin_lv_LV.ts \
-  qt/locale/bitcoin_mk_MK.ts \
-  qt/locale/bitcoin_mn.ts \
-  qt/locale/bitcoin_ms_MY.ts \
-  qt/locale/bitcoin_nb.ts \
-  qt/locale/bitcoin_ne.ts \
-  qt/locale/bitcoin_nl.ts \
-  qt/locale/bitcoin_pam.ts \
-  qt/locale/bitcoin_pl.ts \
-  qt/locale/bitcoin_pt_BR.ts \
-  qt/locale/bitcoin_pt_PT.ts \
-  qt/locale/bitcoin_ro_RO.ts \
-  qt/locale/bitcoin_ro.ts \
-  qt/locale/bitcoin_ru_RU.ts \
-  qt/locale/bitcoin_ru.ts \
-  qt/locale/bitcoin_sk.ts \
-  qt/locale/bitcoin_sl_SI.ts \
-  qt/locale/bitcoin_sq.ts \
-  qt/locale/bitcoin_sr@latin.ts \
-  qt/locale/bitcoin_sr.ts \
-  qt/locale/bitcoin_sv.ts \
-  qt/locale/bitcoin_ta.ts \
-  qt/locale/bitcoin_th_TH.ts \
-  qt/locale/bitcoin_tr_TR.ts \
-  qt/locale/bitcoin_tr.ts \
-  qt/locale/bitcoin_uk.ts \
-  qt/locale/bitcoin_ur_PK.ts \
-  qt/locale/bitcoin_uz@Cyrl.ts \
-  qt/locale/bitcoin_vi.ts \
-  qt/locale/bitcoin_vi_VN.ts \
-  qt/locale/bitcoin_zh_CN.ts \
-  qt/locale/bitcoin_zh_HK.ts \
-  qt/locale/bitcoin_zh.ts \
-  qt/locale/bitcoin_zh_TW.ts
+  qt/locale/gemoney_af.ts \
+  qt/locale/gemoney_af_ZA.ts \
+  qt/locale/gemoney_ar.ts \
+  qt/locale/gemoney_be_BY.ts \
+  qt/locale/gemoney_bg_BG.ts \
+  qt/locale/gemoney_bg.ts \
+  qt/locale/gemoney_ca_ES.ts \
+  qt/locale/gemoney_ca.ts \
+  qt/locale/gemoney_ca@valencia.ts \
+  qt/locale/gemoney_cs.ts \
+  qt/locale/gemoney_cy.ts \
+  qt/locale/gemoney_da.ts \
+  qt/locale/gemoney_de.ts \
+  qt/locale/gemoney_el_GR.ts \
+  qt/locale/gemoney_el.ts \
+  qt/locale/gemoney_en_GB.ts \
+  qt/locale/gemoney_en.ts \
+  qt/locale/gemoney_eo.ts \
+  qt/locale/gemoney_es_AR.ts \
+  qt/locale/gemoney_es_CL.ts \
+  qt/locale/gemoney_es_CO.ts \
+  qt/locale/gemoney_es_DO.ts \
+  qt/locale/gemoney_es_ES.ts \
+  qt/locale/gemoney_es_MX.ts \
+  qt/locale/gemoney_es.ts \
+  qt/locale/gemoney_es_UY.ts \
+  qt/locale/gemoney_es_VE.ts \
+  qt/locale/gemoney_et_EE.ts \
+  qt/locale/gemoney_et.ts \
+  qt/locale/gemoney_eu_ES.ts \
+  qt/locale/gemoney_fa_IR.ts \
+  qt/locale/gemoney_fa.ts \
+  qt/locale/gemoney_fi.ts \
+  qt/locale/gemoney_fr_CA.ts \
+  qt/locale/gemoney_fr_FR.ts \
+  qt/locale/gemoney_fr.ts \
+  qt/locale/gemoney_gl.ts \
+  qt/locale/gemoney_he.ts \
+  qt/locale/gemoney_hi_IN.ts \
+  qt/locale/gemoney_hr.ts \
+  qt/locale/gemoney_hu.ts \
+  qt/locale/gemoney_id_ID.ts \
+  qt/locale/gemoney_it_IT.ts \
+  qt/locale/gemoney_it.ts \
+  qt/locale/gemoney_ja.ts \
+  qt/locale/gemoney_ka.ts \
+  qt/locale/gemoney_kk_KZ.ts \
+  qt/locale/gemoney_ko_KR.ts \
+  qt/locale/gemoney_ku_IQ.ts \
+  qt/locale/gemoney_ky.ts \
+  qt/locale/gemoney_la.ts \
+  qt/locale/gemoney_lt.ts \
+  qt/locale/gemoney_lv_LV.ts \
+  qt/locale/gemoney_mk_MK.ts \
+  qt/locale/gemoney_mn.ts \
+  qt/locale/gemoney_ms_MY.ts \
+  qt/locale/gemoney_nb.ts \
+  qt/locale/gemoney_ne.ts \
+  qt/locale/gemoney_nl.ts \
+  qt/locale/gemoney_pam.ts \
+  qt/locale/gemoney_pl.ts \
+  qt/locale/gemoney_pt_BR.ts \
+  qt/locale/gemoney_pt_PT.ts \
+  qt/locale/gemoney_ro_RO.ts \
+  qt/locale/gemoney_ro.ts \
+  qt/locale/gemoney_ru_RU.ts \
+  qt/locale/gemoney_ru.ts \
+  qt/locale/gemoney_sk.ts \
+  qt/locale/gemoney_sl_SI.ts \
+  qt/locale/gemoney_sq.ts \
+  qt/locale/gemoney_sr@latin.ts \
+  qt/locale/gemoney_sr.ts \
+  qt/locale/gemoney_sv.ts \
+  qt/locale/gemoney_ta.ts \
+  qt/locale/gemoney_th_TH.ts \
+  qt/locale/gemoney_tr_TR.ts \
+  qt/locale/gemoney_tr.ts \
+  qt/locale/gemoney_uk.ts \
+  qt/locale/gemoney_ur_PK.ts \
+  qt/locale/gemoney_uz@Cyrl.ts \
+  qt/locale/gemoney_vi.ts \
+  qt/locale/gemoney_vi_VN.ts \
+  qt/locale/gemoney_zh_CN.ts \
+  qt/locale/gemoney_zh_HK.ts \
+  qt/locale/gemoney_zh.ts \
+  qt/locale/gemoney_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -118,11 +118,11 @@ QT_MOC_CPP = \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_bitcoinaddressvalidator.cpp \
-  qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoin.cpp \
-  qt/moc_bitcoingui.cpp \
-  qt/moc_bitcoinunits.cpp \
+  qt/moc_gemoneyaddressvalidator.cpp \
+  qt/moc_gemoneyamountfield.cpp \
+  qt/moc_gemoney.cpp \
+  qt/moc_gemoneygui.cpp \
+  qt/moc_gemoneyunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
@@ -163,21 +163,21 @@ QT_MOC_CPP = \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp
 
-BITCOIN_MM = \
+GEMONEY_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm \
   qt/macos_appnap.mm
 
 QT_MOC = \
-  qt/bitcoinamountfield.moc \
+  qt/gemoneyamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_bitcoin.cpp
-QT_QRC = qt/bitcoin.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_bitcoin_locale.cpp
-QT_QRC_LOCALE = qt/bitcoin_locale.qrc
+QT_QRC_CPP = qt/qrc_gemoney.cpp
+QT_QRC = qt/gemoney.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_gemoney_locale.cpp
+QT_QRC_LOCALE = qt/gemoney_locale.qrc
 
 if ENABLE_BIP70
 PROTOBUF_CC = qt/paymentrequest.pb.cc
@@ -189,16 +189,16 @@ PROTOBUF_H =
 PROTOBUF_PROTO =
 endif
 
-BITCOIN_QT_H = \
+GEMONEY_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/bitcoinaddressvalidator.h \
-  qt/bitcoinamountfield.h \
-  qt/bitcoin.h \
-  qt/bitcoingui.h \
-  qt/bitcoinunits.h \
+  qt/gemoneyaddressvalidator.h \
+  qt/gemoneyamountfield.h \
+  qt/gemoney.h \
+  qt/gemoneygui.h \
+  qt/gemoneyunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
@@ -252,9 +252,9 @@ RES_ICONS = \
   qt/res/icons/address-book.png \
   qt/res/icons/about.png \
   qt/res/icons/about_qt.png \
-  qt/res/icons/bitcoin.ico \
-  qt/res/icons/bitcoin_testnet.ico \
-  qt/res/icons/bitcoin.png \
+  qt/res/icons/gemoney.ico \
+  qt/res/icons/gemoney_testnet.ico \
+  qt/res/icons/gemoney.png \
   qt/res/icons/chevron.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
@@ -305,13 +305,13 @@ RES_ICONS = \
   qt/res/icons/warning.png \
   qt/res/icons/verify.png
 
-BITCOIN_QT_BASE_CPP = \
+GEMONEY_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
-  qt/bitcoin.cpp \
-  qt/bitcoinaddressvalidator.cpp \
-  qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
-  qt/bitcoinunits.cpp \
+  qt/gemoney.cpp \
+  qt/gemoneyaddressvalidator.cpp \
+  qt/gemoneyamountfield.cpp \
+  qt/gemoneygui.cpp \
+  qt/gemoneyunits.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
@@ -330,9 +330,9 @@ BITCOIN_QT_BASE_CPP = \
   qt/trafficgraphwidget.cpp \
   qt/utilitydialog.cpp
 
-BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+GEMONEY_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
 
-BITCOIN_QT_WALLET_CPP = \
+GEMONEY_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
@@ -361,17 +361,17 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp
 
-BITCOIN_QT_WALLET_BIP70_CPP = \
+GEMONEY_QT_WALLET_BIP70_CPP = \
   qt/paymentrequestplus.cpp
 
-BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+GEMONEY_QT_CPP = $(GEMONEY_QT_BASE_CPP)
 if TARGET_WINDOWS
-BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+GEMONEY_QT_CPP += $(GEMONEY_QT_WINDOWS_CPP)
 endif
 if ENABLE_WALLET
-BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
+GEMONEY_QT_CPP += $(GEMONEY_QT_WALLET_CPP)
 if ENABLE_BIP70
-BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_BIP70_CPP)
+GEMONEY_QT_CPP += $(GEMONEY_QT_WALLET_BIP70_CPP)
 endif # ENABLE_BIP70
 endif # ENABLE_WALLET
 
@@ -379,22 +379,22 @@ RES_IMAGES =
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/bitcoin-qt-res.rc
+GEMONEY_RC = qt/res/gemoney-qt-res.rc
 
-BITCOIN_QT_INCLUDES = -DQT_NO_KEYWORDS
+GEMONEY_QT_INCLUDES = -DQT_NO_KEYWORDS
 
-qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_libgemoneyqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(GEMONEY_INCLUDES) $(GEMONEY_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+qt_libgemoneyqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libgemoneyqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+qt_libgemoneyqt_a_SOURCES = $(GEMONEY_QT_CPP) $(GEMONEY_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 if TARGET_DARWIN
-  qt_libbitcoinqt_a_SOURCES += $(BITCOIN_MM)
+  qt_libgemoneyqt_a_SOURCES += $(GEMONEY_MM)
 endif
 
-nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_qt_libgemoneyqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
@@ -403,76 +403,76 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libgemoneyqt_a_OBJECTS) $(qt_gemoney_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# bitcoin-qt binary #
-qt_bitcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# gemoney-qt binary #
+qt_gemoney_qt_CPPFLAGS = $(AM_CPPFLAGS) $(GEMONEY_INCLUDES) $(GEMONEY_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_gemoney_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_bitcoin_qt_SOURCES = qt/main.cpp
+qt_gemoney_qt_SOURCES = qt/main.cpp
 if TARGET_WINDOWS
-  qt_bitcoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_gemoney_qt_SOURCES += $(GEMONEY_RC)
 endif
-qt_bitcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_gemoney_qt_LDADD = qt/libgemoneyqt.a $(LIBGEMONEY_SERVER)
 if ENABLE_WALLET
-qt_bitcoin_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_gemoney_qt_LDADD += $(LIBGEMONEY_UTIL) $(LIBGEMONEY_WALLET)
 endif
 if ENABLE_ZMQ
-qt_bitcoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_gemoney_qt_LDADD += $(LIBGEMONEY_ZMQ) $(ZMQ_LIBS)
 endif
-qt_bitcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_gemoney_qt_LDADD += $(LIBGEMONEY_CLI) $(LIBGEMONEY_COMMON) $(LIBGEMONEY_UTIL) $(LIBGEMONEY_CONSENSUS) $(LIBGEMONEY_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 if ENABLE_BIP70
-qt_bitcoin_qt_LDADD += $(SSL_LIBS)
+qt_gemoney_qt_LDADD += $(SSL_LIBS)
 else
 if TARGET_WINDOWS
-qt_bitcoin_qt_LDADD += $(SSL_LIBS)
+qt_gemoney_qt_LDADD += $(SSL_LIBS)
 endif
 endif
-qt_bitcoin_qt_LDADD += $(CRYPTO_LIBS)
-qt_bitcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_bitcoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_gemoney_qt_LDADD += $(CRYPTO_LIBS)
+qt_gemoney_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_gemoney_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/bitcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_consensus_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/gemoneystrings.cpp: $(libgemoney_server_a_SOURCES) $(libgemoney_wallet_a_SOURCES) $(libgemoney_common_a_SOURCES) $(libgemoney_zmq_a_SOURCES) $(libgemoney_consensus_a_SOURCES) $(libgemoney_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" COPYRIGHT_HOLDERS_SUBSTITUTION="$(COPYRIGHT_HOLDERS_SUBSTITUTION)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/bitcoin.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/gemoneystrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(GEMONEY_QT_BASE_CPP) qt/gemoney.cpp $(GEMONEY_QT_WINDOWS_CPP) $(GEMONEY_QT_WALLET_CPP) $(GEMONEY_QT_H) $(GEMONEY_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/bitcoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/gemoney_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name gemoney_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name gemoney $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_bitcoin_locale.qrc
+CLEAN_QT = $(nodist_qt_libgemoneyqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_gemoney_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-bitcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) qt/bitcoin-qt$(EXEEXT) $(LIBBITCOINQT)
+gemoney_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libgemoneyqt_a_OBJECTS) $(qt_gemoney_qt_OBJECTS) qt/gemoney-qt$(EXEEXT) $(LIBGEMONEYQT)
 
-bitcoin_qt : qt/bitcoin-qt$(EXEEXT)
+gemoney_qt : qt/gemoney-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

@@ -4,14 +4,14 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test multisig RPCs"""
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import GemoneyTestFramework
 from test_framework.util import (
     assert_raises_rpc_error,
 )
 import decimal
 
 
-class RpcCreateMultiSigTest(BitcoinTestFramework):
+class RpcCreateMultiSigTest(GemoneyTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 3

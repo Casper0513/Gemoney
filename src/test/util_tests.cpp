@@ -794,7 +794,7 @@ BOOST_FIXTURE_TEST_CASE(util_SettingsMerge, SettingsMergeTestingSetup)
 
     // If check below fails, should manually dump the results with:
     //
-    //   SETTINGS_MERGE_TEST_OUT=results.txt ./test_bitcoin --run_test=util_tests/util_SettingsMerge
+    //   SETTINGS_MERGE_TEST_OUT=results.txt ./test_gemoney --run_test=util_tests/util_SettingsMerge
     //
     // And verify diff against previous results to make sure the changes are expected.
     //
@@ -1439,7 +1439,7 @@ BOOST_AUTO_TEST_CASE(test_ToUpper)
 BOOST_AUTO_TEST_CASE(test_Capitalize)
 {
     BOOST_CHECK_EQUAL(Capitalize(""), "");
-    BOOST_CHECK_EQUAL(Capitalize("bitcoin"), "Bitcoin");
+    BOOST_CHECK_EQUAL(Capitalize("gemoney"), "Gemoney");
     BOOST_CHECK_EQUAL(Capitalize("\x00\xfe\xff"), "\x00\xfe\xff");
 }
 
